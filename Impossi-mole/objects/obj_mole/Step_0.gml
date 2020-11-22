@@ -13,6 +13,7 @@ else if(keyboard_check(vk_up)){
 else if(keyboard_check(vk_down)){
 	move_down = true
 }
+
 if(keyboard_check(vk_space) and jump_held < jump_held_max){
 	jump = true
 	move_up = true
