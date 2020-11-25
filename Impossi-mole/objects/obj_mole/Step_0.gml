@@ -14,6 +14,27 @@ else if(keyboard_check(vk_down)){
 	move_down = true
 }
 
+if keyboard_check(ord("A")){
+	
+	if not (move_left or move_right or move_up or move_down){
+		return 0
+	}
+	
+	x_offset = 0
+	y_offset = 0
+	if move_left {
+		x_offset = -sprite_width
+	} else if move_right {
+		x_offset = sprite_width
+	} else if move_down {
+		y_offset = sprite_height
+	} else if move_up {
+		y_offset = -sprite_height
+	}
+	
+	drop_tile(x+x_offset, y+y_offset, obj_cement)
+}
+
 if(keyboard_check(vk_space) and jump_held < jump_held_max){
 	jump = true
 	move_up = true

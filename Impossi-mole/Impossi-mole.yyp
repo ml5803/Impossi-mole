@@ -1,9 +1,13 @@
 {
   "resources": [
     {"id":{"name":"spr_dirt","path":"sprites/spr_dirt/spr_dirt.yy",},"order":0,},
+    {"id":{"name":"spr_bedrock","path":"sprites/spr_bedrock/spr_bedrock.yy",},"order":4,},
     {"id":{"name":"obj_base_tile","path":"objects/obj_base_tile/obj_base_tile.yy",},"order":0,},
     {"id":{"name":"spawn_particles","path":"scripts/spawn_particles/spawn_particles.yy",},"order":1,},
     {"id":{"name":"obj_mole","path":"objects/obj_mole/obj_mole.yy",},"order":4,},
+    {"id":{"name":"obj_bedrock","path":"objects/obj_bedrock/obj_bedrock.yy",},"order":8,},
+    {"id":{"name":"spr_cement","path":"sprites/spr_cement/spr_cement.yy",},"order":3,},
+    {"id":{"name":"drop_tile","path":"scripts/drop_tile/drop_tile.yy",},"order":2,},
     {"id":{"name":"obj_base_digger","path":"objects/obj_base_digger/obj_base_digger.yy",},"order":5,},
     {"id":{"name":"obj_juice","path":"objects/obj_juice/obj_juice.yy",},"order":1,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":6,},
@@ -11,6 +15,7 @@
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},"order":3,},
     {"id":{"name":"obj_particle","path":"objects/obj_particle/obj_particle.yy",},"order":2,},
     {"id":{"name":"spr_mole","path":"sprites/spr_mole/spr_mole.yy",},"order":2,},
+    {"id":{"name":"obj_cement","path":"objects/obj_cement/obj_cement.yy",},"order":7,},
     {"id":{"name":"dig","path":"scripts/dig/dig.yy",},"order":0,},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},"order":0,},
   ],
