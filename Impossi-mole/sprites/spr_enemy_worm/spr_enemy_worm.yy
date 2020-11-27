@@ -1,5 +1,5 @@
 {
-  "bboxMode": 2,
+  "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
   "origin": 4,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"48b9877e-2c69-4a8d-bdb8-d6e780bd3c0f","path":"sprites/spr_bedrock/spr_bedrock.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"48b9877e-2c69-4a8d-bdb8-d6e780bd3c0f","path":"sprites/spr_bedrock/spr_bedrock.yy",},"LayerId":{"name":"8930b2c8-8bcf-443d-af6f-771501a60c98","path":"sprites/spr_bedrock/spr_bedrock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bedrock","path":"sprites/spr_bedrock/spr_bedrock.yy",},"resourceVersion":"1.0","name":"48b9877e-2c69-4a8d-bdb8-d6e780bd3c0f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"eb19262c-cb2b-4d9f-a631-b05087fb927b","path":"sprites/spr_enemy_worm/spr_enemy_worm.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"eb19262c-cb2b-4d9f-a631-b05087fb927b","path":"sprites/spr_enemy_worm/spr_enemy_worm.yy",},"LayerId":{"name":"87344b22-eda7-4e79-8cfd-448ce1b39770","path":"sprites/spr_enemy_worm/spr_enemy_worm.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_enemy_worm","path":"sprites/spr_enemy_worm/spr_enemy_worm.yy",},"resourceVersion":"1.0","name":"eb19262c-cb2b-4d9f-a631-b05087fb927b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bedrock","path":"sprites/spr_bedrock/spr_bedrock.yy",},
+    "spriteId": {"name":"spr_enemy_worm","path":"sprites/spr_enemy_worm/spr_enemy_worm.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"933ada7f-8a24-4b8d-a096-158925705e75","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"48b9877e-2c69-4a8d-bdb8-d6e780bd3c0f","path":"sprites/spr_bedrock/spr_bedrock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"944cfc6d-87d2-46f0-9a53-f24ad91ef9d0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eb19262c-cb2b-4d9f-a631-b05087fb927b","path":"sprites/spr_enemy_worm/spr_enemy_worm.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bedrock","path":"sprites/spr_bedrock/spr_bedrock.yy",},
+    "parent": {"name":"spr_enemy_worm","path":"sprites/spr_enemy_worm/spr_enemy_worm.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_bedrock",
+    "name": "spr_enemy_worm",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8930b2c8-8bcf-443d-af6f-771501a60c98","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"87344b22-eda7-4e79-8cfd-448ce1b39770","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_bedrock",
+  "name": "spr_enemy_worm",
   "tags": [],
   "resourceType": "GMSprite",
 }

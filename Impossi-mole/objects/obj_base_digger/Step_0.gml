@@ -1,10 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var hit_block = pointer_null
+hit_block = noone
 
 if(affected_by_grav){
 	var hit_block_bottom = instance_place(x,y + 1, obj_base_tile)
+	var hit_block_top = instance_place(x,y - 1, obj_base_tile)
+	if(instance_exists(hit_block_top)){
+		vspd = 0
+	}
 	if(instance_exists(hit_block_bottom)){
 		if (!grounded){
 			y = hit_block_bottom.y - sprite_height

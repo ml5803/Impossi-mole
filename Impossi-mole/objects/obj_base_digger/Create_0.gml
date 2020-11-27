@@ -5,9 +5,16 @@ mspd = 0
 dig_str = 0
 jump_str = 0
 
+life = 0
+
+
 affected_by_grav = false
 grav = .1
 vspd = 0
+
+surface_y = 160
+
+hit_block = noone
 
 grounded = true
 

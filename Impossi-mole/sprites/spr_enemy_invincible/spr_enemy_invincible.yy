@@ -1,5 +1,5 @@
 {
-  "bboxMode": 2,
+  "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
   "origin": 4,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"48b9877e-2c69-4a8d-bdb8-d6e780bd3c0f","path":"sprites/spr_bedrock/spr_bedrock.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"48b9877e-2c69-4a8d-bdb8-d6e780bd3c0f","path":"sprites/spr_bedrock/spr_bedrock.yy",},"LayerId":{"name":"8930b2c8-8bcf-443d-af6f-771501a60c98","path":"sprites/spr_bedrock/spr_bedrock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bedrock","path":"sprites/spr_bedrock/spr_bedrock.yy",},"resourceVersion":"1.0","name":"48b9877e-2c69-4a8d-bdb8-d6e780bd3c0f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"42ee9e0e-94f8-4302-b383-551d7201e697","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"42ee9e0e-94f8-4302-b383-551d7201e697","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"LayerId":{"name":"8c050123-d313-4954-bd30-ea8771fea71d","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_enemy_invincible","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"resourceVersion":"1.0","name":"42ee9e0e-94f8-4302-b383-551d7201e697","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bedrock","path":"sprites/spr_bedrock/spr_bedrock.yy",},
+    "spriteId": {"name":"spr_enemy_invincible","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"933ada7f-8a24-4b8d-a096-158925705e75","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"48b9877e-2c69-4a8d-bdb8-d6e780bd3c0f","path":"sprites/spr_bedrock/spr_bedrock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"47045cfa-3c9a-4338-a234-149c1d391b4d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"42ee9e0e-94f8-4302-b383-551d7201e697","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bedrock","path":"sprites/spr_bedrock/spr_bedrock.yy",},
+    "parent": {"name":"spr_enemy_invincible","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_bedrock",
+    "name": "spr_enemy_invincible",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8930b2c8-8bcf-443d-af6f-771501a60c98","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8c050123-d313-4954-bd30-ea8771fea71d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_bedrock",
+  "name": "spr_enemy_invincible",
   "tags": [],
   "resourceType": "GMSprite",
 }
