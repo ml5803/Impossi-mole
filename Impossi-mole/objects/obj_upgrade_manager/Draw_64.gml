@@ -24,11 +24,4 @@ for (i = 0; i < array_length_1d(possible_upgrades); i += 1){
 	}
 }
 
-//draw spare parts icon 
-draw_sprite(spr_spare_parts, 0, width - 200,  10)
-draw_set_font(ft_game)
-
-draw_set_halign(fa_right)
-draw_text(width - 100, 30, obj_game_manager.spare_parts)
-draw_set_halign(fa_left)
 

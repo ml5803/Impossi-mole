@@ -30,7 +30,7 @@ y += vspd
 
 if (move_left){
 	hit_block = instance_place(x - 1,y, obj_base_tile)
-	if(instance_exists(hit_block) and hit_block.x <= x and hit_block.y == y){
+	if(instance_exists(hit_block) and hit_block.x <= x and hit_block.y == y and should_dig){
 		dig_left = true
 	}
 	else if (!instance_exists(hit_block)){
@@ -39,7 +39,7 @@ if (move_left){
 }
 else if(move_right){
 	hit_block = instance_place(x + 1,y, obj_base_tile)
-	if(instance_exists(hit_block) and hit_block.x > x and hit_block.y == y){
+	if(instance_exists(hit_block) and hit_block.x > x and hit_block.y == y and should_dig){
 		dig_right = true
 	}
 	else if (!instance_exists(hit_block)){
@@ -48,7 +48,7 @@ else if(move_right){
 }
 else if(move_up){
 	hit_block = instance_place(x,y - 1, obj_base_tile)
-	if(instance_exists(hit_block) and hit_block.y <= y){
+	if(instance_exists(hit_block) and hit_block.y <= y and should_dig){
 		dig_up = true
 	}
 	else if (!instance_exists(hit_block)){
@@ -57,7 +57,7 @@ else if(move_up){
 }
 else if(move_down){
 	hit_block = instance_place(x,y + 1, obj_base_tile)
-	if(instance_exists(hit_block) and hit_block.y > y){
+	if(instance_exists(hit_block) and hit_block.y > y and should_dig){
 		dig_down = true
 	}
 	else if (!instance_exists(hit_block)){

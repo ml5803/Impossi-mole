@@ -14,7 +14,44 @@ else if(keyboard_check(vk_down)){
 	move_down = true
 }
 
+if(keyboard_check(vk_space) and jump_held < jump_held_max){
+	jump = true
+	move_up = true
+	jump_held += 1
+}
+else if(keyboard_check_released(vk_space) and !jump_released){
+	jump_released = true
+}
+else if (grounded){
+	jump = false
+	jump_held = 0
+	jump_released = false
+}
+
+if(jump_released){
+	jump = false
+}
+
+hit_cave = instance_place(x,y, obj_cave)
+if instance_exists(hit_cave){
+	room_goto(rm_upgrade)
+}
+
+hit_spare_parts = instance_place(x,y, obj_spare_parts)
+if instance_exists(hit_spare_parts){
+	obj_game_manager.spare_parts += 1
+	instance_destroy(hit_spare_parts)
+}
+
+//dig
 if keyboard_check(ord("A")){
+	should_dig = true
+}else{
+	should_dig = false
+}
+
+//placing tile
+if keyboard_check(ord("S")){
 	
 	if not (move_left or move_right or move_up or move_down){
 		return 0
@@ -33,24 +70,6 @@ if keyboard_check(ord("A")){
 	}
 	
 	drop_tile(x+x_offset, y+y_offset, obj_cement)
-}
-
-if(keyboard_check(vk_space) and jump_held < jump_held_max){
-	jump = true
-	move_up = true
-	jump_held += 1
-}
-else if(keyboard_check_released(vk_space) and !jump_released){
-	jump_released = true
-}
-else if (grounded){
-	jump = false
-	jump_held = 0
-	jump_released = false
-}
-
-if(jump_released){
-	jump = false
 }
 
 // Inherit the parent event

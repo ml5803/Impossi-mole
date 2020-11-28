@@ -25,6 +25,7 @@ move_up = false
 
 jump = false
 
+should_dig = true
 dig_left = false
 dig_right = false
 dig_down = false
