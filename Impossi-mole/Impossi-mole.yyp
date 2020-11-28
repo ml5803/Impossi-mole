@@ -17,6 +17,7 @@
     {"id":{"name":"rm_test_enemies","path":"rooms/rm_test_enemies/rm_test_enemies.yy",},"order":6,},
     {"id":{"name":"spr_spare_parts","path":"sprites/spr_spare_parts/spr_spare_parts.yy",},"order":10,},
     {"id":{"name":"obj_bedrock","path":"objects/obj_bedrock/obj_bedrock.yy",},"order":8,},
+    {"id":{"name":"obj_spawn_gen","path":"objects/obj_spawn_gen/obj_spawn_gen.yy",},"order":25,},
     {"id":{"name":"spr_cement","path":"sprites/spr_cement/spr_cement.yy",},"order":3,},
     {"id":{"name":"rm_level_1","path":"rooms/rm_level_1/rm_level_1.yy",},"order":1,},
     {"id":{"name":"drop_tile","path":"scripts/drop_tile/drop_tile.yy",},"order":2,},
