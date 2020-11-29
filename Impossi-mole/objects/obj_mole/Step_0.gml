@@ -51,7 +51,7 @@ if keyboard_check(ord("A")){
 }
 
 //placing tile
-if keyboard_check(ord("S")){
+if keyboard_check_pressed(ord("S")){
 	
 	if not (move_left or move_right or move_up or move_down){
 		return 0

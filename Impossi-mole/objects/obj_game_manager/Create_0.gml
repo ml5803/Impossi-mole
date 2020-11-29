@@ -18,8 +18,8 @@ claw_power_inc = 20
 hp_inc = 20
 
 //current upgrades
-storage_up = 2
-move_spd_up = 2
+storage_up = 1
+move_spd_up = 1
 claw_power_up = 1
 hp_up = 1
 

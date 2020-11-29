@@ -9,7 +9,7 @@ life = 0
 
 
 affected_by_grav = false
-grav = .1
+grav = .3
 vspd = 0
 
 surface_y = 160
