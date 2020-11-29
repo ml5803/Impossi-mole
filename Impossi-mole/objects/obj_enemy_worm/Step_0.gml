@@ -29,25 +29,49 @@
 if(go_to == 0){
 	move_left = true
 	if(!instance_exists(instance_place(x + sprite_width,y, obj_base_tile))){
-		drop_tile(x + sprite_width, y, obj_cement)
+		if(!instance_exists(instance_place(x + sprite_width,y, obj_base_digger))){
+			if(!instance_exists(instance_place(x + sprite_width,y, obj_cave))){
+				if(!instance_exists(instance_place(x + sprite_width,y, obj_spare_parts))){
+					drop_tile(x + sprite_width, y, obj_cement)
+				}
+			}
+		}
 	}
 }
 else if(go_to == 1){
 	move_right = true
 	if(!instance_exists(instance_place(x - sprite_width,y, obj_base_tile))){
-		drop_tile(x - sprite_width, y, obj_cement)
+		if(!instance_exists(instance_place(x - sprite_width,y, obj_base_digger))){
+			if(!instance_exists(instance_place(x - sprite_width,y, obj_cave))){
+				if(!instance_exists(instance_place(x - sprite_width,y, obj_spare_parts))){
+					drop_tile(x - sprite_width, y, obj_cement)
+				}
+			}
+		}
 	}
 }
 else if(go_to == 2 and y > surface_y + sprite_height){
 	move_up = true
 	if(!instance_exists(instance_place(x,y + sprite_height, obj_base_tile))){
-		drop_tile(x, y + sprite_height, obj_cement)
+		if(!instance_exists(instance_place(x,y + sprite_height, obj_base_digger))){
+			if(!instance_exists(instance_place(x,y + sprite_height, obj_cave))){
+				if(!instance_exists(instance_place(x,y + sprite_height, obj_spare_parts))){
+					drop_tile(x, y + sprite_height, obj_cement)
+				}
+			}
+		}
 	}
 }
 else if(go_to == 3){
 	move_down = true
 	if(!instance_exists(instance_place(x,y - sprite_height, obj_base_tile))){
-		drop_tile(x, y - sprite_height, obj_cement)
+		if(!instance_exists(instance_place(x,y - sprite_height, obj_base_digger))){
+			if(!instance_exists(instance_place(x,y - sprite_height, obj_cave))){
+				if(!instance_exists(instance_place(x,y - sprite_height, obj_spare_parts))){
+					drop_tile(x, y + sprite_height, obj_cement)
+				}
+			}
+		}
 	}
 }
 else{

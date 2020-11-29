@@ -30,23 +30,23 @@ y += vspd
 
 if (move_left){
 	hit_block = instance_place(x - 1,y, obj_base_tile)
-	if(instance_exists(hit_block) and hit_block.x <= x and hit_block.y == y and should_dig){
+	if(instance_exists(hit_block) and hit_block.x <= x and hit_block.y - 32 <= y and hit_block.y + 32 > y and should_dig){
 		dig_left = true
 	}
 	else if (!instance_exists(hit_block)){
 		x -= 1
 	}
 }
-else if(move_right){
+if(move_right){
 	hit_block = instance_place(x + 1,y, obj_base_tile)
-	if(instance_exists(hit_block) and hit_block.x > x and hit_block.y == y and should_dig){
+	if(instance_exists(hit_block) and hit_block.x > x and hit_block.y - 32 <= y and hit_block.y + 32 > y and should_dig){
 		dig_right = true
 	}
 	else if (!instance_exists(hit_block)){
 		x += 1
 	}
 }
-else if(move_up){
+if(move_up){
 	hit_block = instance_place(x,y - 1, obj_base_tile)
 	if(instance_exists(hit_block) and hit_block.y <= y and should_dig){
 		dig_up = true
@@ -68,16 +68,16 @@ if(jump and !instance_exists(instance_place(x, y - jump_str, obj_base_tile))){
 	vspd = -jump_str
 }
 
-if (dig_left){
+if (dig_left and instance_exists(hit_block)){
 	dig(directions.right, dig_str, hit_block)
 }
-else if(dig_right){
+else if(dig_right and instance_exists(hit_block)){
 	dig(directions.left, dig_str, hit_block)
 }
-else if(dig_up){
+else if(dig_up and instance_exists(hit_block)){
 	dig(directions.bottom, dig_str, hit_block)
 }
-else if(dig_down){
+else if(dig_down and instance_exists(hit_block)){
 	dig(directions.top, dig_str, hit_block)
 }
 
