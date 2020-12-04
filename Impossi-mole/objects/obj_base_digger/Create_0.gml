@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-mspd = 0
+mspd = 1
 dig_str = 0
 jump_str = 0
 

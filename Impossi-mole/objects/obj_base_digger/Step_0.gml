@@ -29,21 +29,21 @@ if(affected_by_grav){
 y += vspd
 
 if (move_left){
-	hit_block = instance_place(x - 1,y, obj_base_tile)
-	if(instance_exists(hit_block) and hit_block.x <= x and hit_block.y - 32 <= y and hit_block.y + 32 > y and should_dig){
+	hit_block = instance_place(x - mspd,y, obj_base_tile)
+	if(instance_exists(hit_block) and hit_block.x <= x and should_dig){
 		dig_left = true
 	}
 	else if (!instance_exists(hit_block)){
-		x -= 1
+		x -= mspd
 	}
 }
 if(move_right){
-	hit_block = instance_place(x + 1,y, obj_base_tile)
-	if(instance_exists(hit_block) and hit_block.x > x and hit_block.y - 32 <= y and hit_block.y + 32 > y and should_dig){
+	hit_block = instance_place(x + mspd,y, obj_base_tile)
+	if(instance_exists(hit_block) and hit_block.x > x and should_dig){
 		dig_right = true
 	}
 	else if (!instance_exists(hit_block)){
-		x += 1
+		x += mspd
 	}
 }
 if(move_up){

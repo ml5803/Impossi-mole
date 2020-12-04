@@ -7,7 +7,7 @@ enum directions {top, left, right, bottom, center}
 
 //base stats
 storage_cap = 1
-move_spd = 1
+move_spd = 5
 claw_power = 20
 hp = 1
 

@@ -6,7 +6,7 @@ event_inherited();
 
 //get upgraded stats
 storage_limit = obj_game_manager.storage_inc * obj_game_manager.storage_up + obj_game_manager.storage_cap
-m_spd = obj_game_manager.move_spd_inc * obj_game_manager.move_spd_up + obj_game_manager.move_spd
+mspd = obj_game_manager.move_spd_inc * obj_game_manager.move_spd_up + obj_game_manager.move_spd
 claw_str = obj_game_manager.claw_power_inc * obj_game_manager.claw_power_up + obj_game_manager.claw_power
 life = obj_game_manager.hp_inc * obj_game_manager.hp_up + obj_game_manager.hp
 
