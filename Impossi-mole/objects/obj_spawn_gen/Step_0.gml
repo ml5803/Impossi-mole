@@ -14,7 +14,8 @@ if room == rm_level_4 or room == rm_test_enemies{
 						//spawnEnemy(curr_pt_x, curr_pt_y)
 						break
 					case "tile":
-						spawnTile(curr_pt_x, curr_pt_y)
+						points = snap_to_grid(curr_pt_x, curr_pt_y)
+						spawnTile(points[0], points[1])
 						break
 				}
 			}
