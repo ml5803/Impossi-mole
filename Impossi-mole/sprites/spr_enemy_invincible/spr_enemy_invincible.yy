@@ -24,24 +24,28 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"42ee9e0e-94f8-4302-b383-551d7201e697","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"42ee9e0e-94f8-4302-b383-551d7201e697","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"LayerId":{"name":"8c050123-d313-4954-bd30-ea8771fea71d","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_enemy_invincible","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"resourceVersion":"1.0","name":"42ee9e0e-94f8-4302-b383-551d7201e697","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c482c9bf-bd39-48bb-b20b-e30e73a89161","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c482c9bf-bd39-48bb-b20b-e30e73a89161","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"LayerId":{"name":"8c050123-d313-4954-bd30-ea8771fea71d","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_enemy_invincible","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"resourceVersion":"1.0","name":"c482c9bf-bd39-48bb-b20b-e30e73a89161","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b7ae6219-5088-4a89-b31d-c1dd5d805f8f","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b7ae6219-5088-4a89-b31d-c1dd5d805f8f","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"LayerId":{"name":"8c050123-d313-4954-bd30-ea8771fea71d","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_enemy_invincible","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"resourceVersion":"1.0","name":"b7ae6219-5088-4a89-b31d-c1dd5d805f8f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_enemy_invincible","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 4.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 2.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"47045cfa-3c9a-4338-a234-149c1d391b4d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"42ee9e0e-94f8-4302-b383-551d7201e697","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4de48f52-61d9-4e37-895a-98dbc2c2603e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c482c9bf-bd39-48bb-b20b-e30e73a89161","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c5ccef71-a03f-437d-ad42-95d8150f458f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b7ae6219-5088-4a89-b31d-c1dd5d805f8f","path":"sprites/spr_enemy_invincible/spr_enemy_invincible.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,

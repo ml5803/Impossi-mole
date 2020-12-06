@@ -14,22 +14,34 @@ else if(keyboard_check(vk_down)){
 	move_down = true
 }
 
-if(keyboard_check(vk_space) and jump_held < jump_held_max){
+if(keyboard_check(vk_space) and jump_held < jump_held_max and can_jump){
 	jump = true
 	move_up = true
 	jump_held += 1
 }
-else if(keyboard_check_released(vk_space) and !jump_released){
+else{
 	jump_released = true
+	can_jump = false
 }
-else if (grounded){
+//else if(keyboard_check_released(vk_space) and !jump_released){
+//	jump_released = true
+	
+//}
+if (grounded){
 	jump = false
 	jump_held = 0
 	jump_released = false
+	can_jump = true
 }
 
 if(jump_released){
 	jump = false
+	float_time_curr += 1
+	if(float_time_curr == float_time_max){
+		float_time_curr = 0
+		jump_released = false
+		can_jump = false
+	}
 }
 
 hit_cave = instance_place(x,y, obj_cave)
