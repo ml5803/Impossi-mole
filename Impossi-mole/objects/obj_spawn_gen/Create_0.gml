@@ -11,18 +11,20 @@ possible_enemies = [obj_enemy_mine, obj_enemy_worm,
 range_inner_x = camera_get_view_width(view_camera[0]) * 0.5
 range_inner_y = camera_get_view_height(view_camera[0]) * 0.5
 
-range_outer_x = range_inner_x + sprite_get_width(spr_dirt)
-range_outer_y = range_inner_y + sprite_get_width(spr_dirt)
-
-range_inner_x = 300
-range_inner_y = 200
+range_inner_x = view_wport[0] * 0.5
+range_inner_y = view_hport[0] * 0.5
 
 range_outer_x = range_inner_x + sprite_get_width(spr_dirt)
 range_outer_y = range_inner_y + sprite_get_width(spr_dirt)
+
+view_distance = sqrt(sqr(range_inner_x) + sqr(range_inner_y))+64
 
 x_offset = sprite_get_width(spr_dirt)
 y_offset = sprite_get_height(spr_dirt)
 	
+max_enemy_count = 3
+num_active_enemies = 0
+
 function determineSpawn(){
 	prob = random_range(0,1)
 	
@@ -65,5 +67,13 @@ function inReserveArea(_x,_y){
 		return true
 	} else{
 		return false
+	}
+}
+
+function despawn(){
+	with obj_base_enemy {
+		if point_distance(x, y, obj_spawn_gen.x, obj_spawn_gen.y) >= obj_spawn_gen.view_distance{
+			instance_destroy()
+		}
 	}
 }

@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_transparent",
+    "path": "sprites/spr_transparent/spr_transparent.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
