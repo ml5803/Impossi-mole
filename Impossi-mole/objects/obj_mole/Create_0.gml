@@ -10,6 +10,9 @@ mspd = obj_game_manager.move_spd_inc * obj_game_manager.move_spd_up + obj_game_m
 claw_str = obj_game_manager.claw_power_inc * obj_game_manager.claw_power_up + obj_game_manager.claw_power
 life = obj_game_manager.hp_inc * obj_game_manager.hp_up + obj_game_manager.hp
 
+//life_x = x
+//life_y = y
+
 affected_by_grav = true
 dig_str = 10
 jump_str = 1.5

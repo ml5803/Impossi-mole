@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//life_x = x + 32
+//life_y = y + 32
+
+//life_x = x
+//life_y = y
+
 if(keyboard_check(vk_left)){
 	move_left = true
 }
