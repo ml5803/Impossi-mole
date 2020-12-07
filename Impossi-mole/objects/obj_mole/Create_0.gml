@@ -11,7 +11,7 @@ claw_str = obj_game_manager.claw_power_inc * obj_game_manager.claw_power_up + ob
 life = obj_game_manager.hp_inc * obj_game_manager.hp_up + obj_game_manager.hp
 
 affected_by_grav = true
-dig_str = 10
+dig_str = claw_str
 jump_str = 1.5
 
 grav = .5
@@ -26,8 +26,12 @@ can_jump = true
 
 shot_xoffset = sprite_width
 shot_yoffset = sprite_height
-shot_cd = 10
-last_shot = 10
+shot_cd = 30
+last_shot = 30
+
+//upgrade mole sprites
+body_sprite = obj_game_manager.body_sprite
+claws_sprite = obj_game_manager.claws_sprite
 
 function createShot(shot_dir){
 	if last_shot < shot_cd {

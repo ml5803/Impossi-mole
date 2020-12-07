@@ -8,5 +8,7 @@ function doAction(){
 		obj_game_manager.claw_power_up < obj_game_manager.claw_power_cap){
 		obj_game_manager.spare_parts = obj_game_manager.spare_parts - obj_game_manager.claw_power_up 
 		obj_game_manager.claw_power_up += 1
+		
+		obj_game_manager.claws_sprite = spr_mole_claws_up1
 	}
 }
