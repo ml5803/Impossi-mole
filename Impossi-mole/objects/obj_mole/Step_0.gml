@@ -1,23 +1,31 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+<<<<<<< HEAD
 //life_x = x + 32
 //life_y = y + 32
 
 //life_x = x
 //life_y = y
+=======
+shot_dir = directions.center
+>>>>>>> 154eaca4ec0df00002a4edf73ebc1c81957f90d5
 
 if(keyboard_check(vk_left)){
 	move_left = true
+	shot_dir = directions.left
 }
 else if(keyboard_check(vk_right)){
 	move_right = true
+	shot_dir = directions.right
 }
 else if(keyboard_check(vk_up)){
 	move_up = true
+	shot_dir = directions.top
 }
 else if(keyboard_check(vk_down)){
 	move_down = true
+	shot_dir = directions.bottom
 }
 
 if(keyboard_check(vk_space) and jump_held < jump_held_max and can_jump){
@@ -88,6 +96,13 @@ if keyboard_check_pressed(ord("S")){
 	}
 	
 	drop_tile(x+x_offset, y+y_offset, obj_cement)
+}
+
+//shoot
+last_shot += 1
+if keyboard_check(ord("D")){
+	
+	createShot(shot_dir)
 }
 
 // Inherit the parent event

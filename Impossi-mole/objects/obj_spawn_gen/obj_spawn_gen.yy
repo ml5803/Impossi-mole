@@ -1,14 +1,11 @@
 {
   "spriteId": {
-    "name": "spr_transparent",
-    "path": "sprites/spr_transparent/spr_transparent.yy",
+    "name": "spr_particle",
+    "path": "sprites/spr_particle/spr_particle.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "spr_dirt",
-    "path": "sprites/spr_dirt/spr_dirt.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -26,7 +23,7 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_spawn_gen","path":"objects/obj_spawn_gen/obj_spawn_gen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_spawn_gen","path":"objects/obj_spawn_gen/obj_spawn_gen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_spawn_gen","path":"objects/obj_spawn_gen/obj_spawn_gen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_spawn_gen","path":"objects/obj_spawn_gen/obj_spawn_gen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

@@ -1,11 +1,14 @@
 {
   "resources": [
     {"id":{"name":"obj_enemy_boss","path":"objects/obj_enemy_boss/obj_enemy_boss.yy",},"order":28,},
+    {"id":{"name":"spr_mole_claws","path":"sprites/spr_mole_claws/spr_mole_claws.yy",},"order":20,},
+    {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":29,},
     {"id":{"name":"obj_btn_move_spd_upgrade","path":"objects/obj_btn_move_spd_upgrade/obj_btn_move_spd_upgrade.yy",},"order":21,},
     {"id":{"name":"spr_enemy_worm","path":"sprites/spr_enemy_worm/spr_enemy_worm.yy",},"order":16,},
     {"id":{"name":"spr_dirt","path":"sprites/spr_dirt/spr_dirt.yy",},"order":0,},
     {"id":{"name":"spr_bedrock","path":"sprites/spr_bedrock/spr_bedrock.yy",},"order":4,},
     {"id":{"name":"spr_spare_parts","path":"sprites/spr_spare_parts/spr_spare_parts.yy",},"order":14,},
+    {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":19,},
     {"id":{"name":"obj_btn_storage_upgrade","path":"objects/obj_btn_storage_upgrade/obj_btn_storage_upgrade.yy",},"order":22,},
     {"id":{"name":"spr_enemy_tracker","path":"sprites/spr_enemy_tracker/spr_enemy_tracker.yy",},"order":15,},
     {"id":{"name":"rm_upgrade","path":"rooms/rm_upgrade/rm_upgrade.yy",},"order":7,},
@@ -52,6 +55,7 @@
     {"id":{"name":"spr_enemy_mine","path":"sprites/spr_enemy_mine/spr_enemy_mine.yy",},"order":6,},
     {"id":{"name":"obj_btn_hp_upgrade","path":"objects/obj_btn_hp_upgrade/obj_btn_hp_upgrade.yy",},"order":20,},
     {"id":{"name":"spr_upgrade_off","path":"sprites/spr_upgrade_off/spr_upgrade_off.yy",},"order":12,},
+    {"id":{"name":"spr_mole_claws_up1","path":"sprites/spr_mole_claws_up1/spr_mole_claws_up1.yy",},"order":21,},
     {"id":{"name":"obj_cement","path":"objects/obj_cement/obj_cement.yy",},"order":7,},
     {"id":{"name":"dig","path":"scripts/dig/dig.yy",},"order":0,},
     {"id":{"name":"obj_actor","path":"objects/obj_actor/obj_actor.yy",},"order":17,},

@@ -21,6 +21,14 @@ if((x < 0 or x > room_width) and (y < 0 or y > room_height)){
 	instance_destroy(self)
 }
 
+//killed by bullet
+hit_bullet = instance_place(x,y,obj_bullet)
+if (instance_exists(hit_bullet)){
+	life -= hit_bullet.dmg
+	instance_destroy(hit_bullet)
+}
+
 if (life <= 0){
 	instance_destroy(self)
 }
+
