@@ -1,53 +1,35 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-shot_dir = directions.center
-
 if(keyboard_check(vk_left)){
 	move_left = true
-	shot_dir = directions.left
 }
 else if(keyboard_check(vk_right)){
 	move_right = true
-	shot_dir = directions.right
 }
 else if(keyboard_check(vk_up)){
 	move_up = true
-	shot_dir = directions.top
 }
 else if(keyboard_check(vk_down)){
 	move_down = true
-	shot_dir = directions.bottom
 }
 
-if(keyboard_check(vk_space) and jump_held < jump_held_max and can_jump){
+if(keyboard_check(vk_space) and jump_held < jump_held_max){
 	jump = true
 	move_up = true
 	jump_held += 1
 }
-else{
+else if(keyboard_check_released(vk_space) and !jump_released){
 	jump_released = true
-	can_jump = false
 }
-//else if(keyboard_check_released(vk_space) and !jump_released){
-//	jump_released = true
-	
-//}
-if (grounded){
+else if (grounded){
 	jump = false
 	jump_held = 0
 	jump_released = false
-	can_jump = true
 }
 
 if(jump_released){
 	jump = false
-	float_time_curr += 1
-	if(float_time_curr == float_time_max){
-		float_time_curr = 0
-		jump_released = false
-		can_jump = false
-	}
 }
 
 hit_cave = instance_place(x,y, obj_cave)
@@ -88,13 +70,6 @@ if keyboard_check_pressed(ord("S")){
 	}
 	
 	drop_tile(x+x_offset, y+y_offset, obj_cement)
-}
-
-//shoot
-last_shot += 1
-if keyboard_check(ord("D")){
-	
-	createShot(shot_dir)
 }
 
 // Inherit the parent event

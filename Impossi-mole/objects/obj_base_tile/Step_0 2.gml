@@ -9,12 +9,6 @@ if (room == rm_level_4 or room == rm_test_enemies){
 	}
 }
 
-//hit by bullet
-hit_bullet = instance_place(x,y,obj_bullet)
-if (instance_exists(hit_bullet)){
-	instance_destroy(hit_bullet)
-}
-
 if hp <= 0{
 	instance_destroy()
 }

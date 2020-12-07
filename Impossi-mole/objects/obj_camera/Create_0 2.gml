@@ -1,6 +1,6 @@
 target = obj_mole
 
-cam = view_camera[0]
+cam = view_get_camera(view_current)
 
 lerp_spd = .1
 

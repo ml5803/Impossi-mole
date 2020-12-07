@@ -1,20 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+spd = 10
+angle = 0
+x_offset = 64
+y_offset = 64
+dmg = obj_mole.claw_str
 
-if (room == rm_level_4 or room == rm_test_enemies){
+function killOnBounds(){
 	if (x < obj_spawn_gen.x - obj_spawn_gen.range_outer_x or x > obj_spawn_gen.x + obj_spawn_gen.range_outer_x
 		or y < obj_spawn_gen.y - obj_spawn_gen.range_outer_y or y > obj_spawn_gen.y + obj_spawn_gen.range_outer_y){
-		hp = 0
+		instance_destroy()
 	}
 }
 
-//hit by bullet
-hit_bullet = instance_place(x,y,obj_bullet)
-if (instance_exists(hit_bullet)){
-	instance_destroy(hit_bullet)
-}
-
-if hp <= 0{
-	instance_destroy()
-}
+killOnBounds()
