@@ -1,15 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-<<<<<<< HEAD
-//life_x = x + 32
-//life_y = y + 32
-
-//life_x = x
-//life_y = y
-=======
 shot_dir = directions.center
->>>>>>> 154eaca4ec0df00002a4edf73ebc1c81957f90d5
 
 if(keyboard_check(vk_left)){
 	move_left = true

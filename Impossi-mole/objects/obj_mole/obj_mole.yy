@@ -26,11 +26,7 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_mole","path":"objects/obj_mole/obj_mole.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_mole","path":"objects/obj_mole/obj_mole.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-<<<<<<< HEAD
-    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_mole","path":"objects/obj_mole/obj_mole.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-=======
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_mole","path":"objects/obj_mole/obj_mole.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
->>>>>>> 154eaca4ec0df00002a4edf73ebc1c81957f90d5
   ],
   "properties": [],
   "overriddenProperties": [],
