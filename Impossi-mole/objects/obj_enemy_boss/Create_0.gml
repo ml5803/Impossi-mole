@@ -4,7 +4,17 @@
 // Inherit the parent event
 event_inherited();
 
+life_max = 3000
+
 life = 3000
+
+life_disp = life
+
+hp_draw_w = 600
+hp_draw_h = 12
+
+hp_draw_x = x - hp_draw_w/2
+hp_draw_y = y + 40
 
 dig_str = 50
 

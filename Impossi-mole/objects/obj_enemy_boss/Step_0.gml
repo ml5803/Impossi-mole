@@ -4,6 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
+hp_draw_x = obj_camera.cam_x - hp_draw_w/2
+hp_draw_y = obj_camera.cam_y + 156
+
 frame += 1
 
 if (life <= 3000){
