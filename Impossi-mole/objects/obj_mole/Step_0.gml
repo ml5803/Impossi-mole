@@ -2,22 +2,31 @@
 // You can write your code in this editor
 
 shot_dir = directions.center
+should_anim = false
 
 if(keyboard_check(vk_left)){
 	move_left = true
+	anim_move_left = true
 	shot_dir = directions.left
+	should_anim = true
 }
 else if(keyboard_check(vk_right)){
 	move_right = true
+	anim_move_right = true
 	shot_dir = directions.right
+	should_anim = true
 }
 else if(keyboard_check(vk_up)){
 	move_up = true
+	anim_move_up = true
 	shot_dir = directions.top
+	should_anim = true
 }
 else if(keyboard_check(vk_down)){
 	move_down = true
+	anim_move_down = true
 	shot_dir = directions.bottom
+	should_anim = true
 }
 
 if(keyboard_check(vk_space) and jump_held < jump_held_max and can_jump){
@@ -96,6 +105,20 @@ if keyboard_check(ord("D")){
 	
 	createShot(shot_dir)
 }
+
+
+//animations
+if last_anim <= 0{
+	if anim > 0 and should_anim{
+		anim -= 1
+	}else{
+		anim = 4
+	}
+	last_anim = frames
+}else{
+	last_anim -= 1
+}
+	
 
 // Inherit the parent event
 event_inherited();

@@ -29,9 +29,13 @@ move_spd_cap = 5
 claw_power_cap = 5
 hp_cap = 5
 
+//avaiable_sprites
+poss_body = [spr_mole, spr_mole_up1,spr_mole_up2, spr_mole_up3, spr_mole_up4]
+poss_claws = [spr_mole_claws, spr_mole_claws_up1, spr_mole_claws_up2, spr_mole_claws_up3, spr_mole_claws_up4]
+
 //sprites
-body_sprite = spr_mole
-claws_sprite = spr_mole_claws
+body_sprite = 0
+claws_sprite = 0
 
 //spare parts
 spare_parts = 100

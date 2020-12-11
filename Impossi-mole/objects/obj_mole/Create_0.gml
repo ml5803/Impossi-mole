@@ -30,8 +30,20 @@ shot_cd = 30
 last_shot = 30
 
 //upgrade mole sprites
-body_sprite = obj_game_manager.body_sprite
-claws_sprite = obj_game_manager.claws_sprite
+body_sprite = obj_game_manager.poss_body[obj_game_manager.body_sprite]
+claws_sprite = obj_game_manager.poss_claws[obj_game_manager.claws_sprite]
+
+//sprite_frames
+anim = 4
+last_anim = 0
+frames = 4
+should_anim = false
+rot = 0
+
+anim_move_right = false
+anim_move_left = false
+anim_move_up = true
+anim_move_down = false
 
 function createShot(shot_dir){
 	if last_shot < shot_cd {

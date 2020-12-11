@@ -8,5 +8,7 @@ function doAction(){
 		obj_game_manager.hp_up < obj_game_manager.hp_cap){
 		obj_game_manager.spare_parts = obj_game_manager.spare_parts - obj_game_manager.hp_up 
 		obj_game_manager.hp_up += 1
+		
+		obj_game_manager.body_sprite += 1
 	}
 }
