@@ -29,6 +29,9 @@ if (instance_exists(hit_bullet)){
 }
 
 if (life <= 0){
+	if(room == rm_level_4){
+		obj_spawn_gen.gate_chance += 1
+	}
 	instance_destroy(self)
 }
 

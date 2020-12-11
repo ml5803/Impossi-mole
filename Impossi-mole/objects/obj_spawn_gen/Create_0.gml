@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+gate_chance = 0
+
 rand_prob_tiles = [0.7,0.9,1]
 possible_tiles = [obj_base_tile, obj_cement, obj_bedrock]
 
@@ -27,7 +29,11 @@ num_active_enemies = 0
 
 function determineSpawn(){
 	prob = random_range(0,1)
-	
+	if gate_chance == 5 {
+		gate_chance = 0
+		return "gate"
+	}
+		
 	if prob > 0.95 {
 		return "tile"
 	}else {

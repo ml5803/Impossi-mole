@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_upgrade_hover",
-    "path": "sprites/spr_upgrade_hover/spr_upgrade_hover.yy",
+    "name": "spr_button_next_hover",
+    "path": "sprites/spr_button_next_hover/spr_button_next_hover.yy",
   },
   "solid": false,
   "visible": true,

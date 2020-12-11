@@ -3,6 +3,9 @@
 
 event_inherited();
 
+sprite_hover = spr_button_next_hover
+sprite_off = spr_button_next_off
+
 function doAction(){
 	obj_game_manager.curr_lvl += 1
 	room_goto(story_room)

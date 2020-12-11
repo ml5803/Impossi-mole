@@ -4,6 +4,9 @@
 x_offset = 32
 y_offset = 32
 
+sprite_hover = spr_upgrade_hover
+sprite_off = spr_upgrade_off
+
 function doAction(){
 	show_debug_message("I'm between")
 	return 0
