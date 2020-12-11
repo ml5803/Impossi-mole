@@ -80,7 +80,7 @@ if keyboard_check(ord("A")){
 //placing tile
 if keyboard_check_pressed(ord("S")){
 	
-	if not (move_left or move_right or move_up or move_down){
+	if not ((move_left or move_right or move_up or move_down)) or storage_limit <= 0{
 		return 0
 	}
 	
@@ -97,6 +97,7 @@ if keyboard_check_pressed(ord("S")){
 	}
 	
 	drop_tile(x+x_offset, y+y_offset, obj_cement)
+	storage_limit -= 1
 }
 
 //shoot
