@@ -6,14 +6,14 @@ randomize()
 enum directions {top, left, right, bottom, center}
 
 //base stats
-storage_cap = 1
-move_spd = 5
+storage = 1
+move_spd = 2
 claw_power = 20
 hp = 1
 
 //upgrade increments
 storage_inc = 1
-move_spd_inc = 1
+move_spd_inc = 0.5
 claw_power_inc = 20
 hp_inc = 1
 

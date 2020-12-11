@@ -30,3 +30,6 @@ dig_left = false
 dig_right = false
 dig_down = false
 dig_up = false
+
+dig_time = 0
+dig_cooldown = 15
