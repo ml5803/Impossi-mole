@@ -5,9 +5,9 @@
 event_inherited();
 
 if(just_damaged){
-	frame += 1
-	if(frame == damage_delay){
-		frame = 0
+	damage_frame += 1
+	if(damage_frame == damage_delay){
+		damage_frame = 0
 		just_damaged = false
 	}
 }

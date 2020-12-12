@@ -4,6 +4,10 @@
 // Inherit the parent event
 event_inherited();
 
+spare_parts_at_level_start = obj_game_manager.spare_parts
+
+tag = "mole"
+
 //get upgraded stats
 storage_limit = obj_game_manager.storage_inc * obj_game_manager.storage_up + obj_game_manager.storage
 mspd = obj_game_manager.move_spd_inc * obj_game_manager.move_spd_up + obj_game_manager.move_spd

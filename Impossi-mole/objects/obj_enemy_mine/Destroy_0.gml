@@ -13,6 +13,11 @@ for (var i = 0; i < instance_number(obj_base_digger); i++)
 {
 	var digger = instance_find(obj_base_digger,i);
 	if(point_distance(x,y,digger.x, digger.y) < 128){
-			digger.life -= damage
+			if(digger.tag == "mole"){
+				digger.life -= 1
+			}
+			else{
+				digger.life -= damage
+			}
 	}
 }

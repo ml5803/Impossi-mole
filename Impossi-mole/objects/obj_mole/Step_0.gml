@@ -119,6 +119,11 @@ if last_anim <= 0{
 }else{
 	last_anim -= 1
 }
+
+if (life <= 0 and obj_game_manager.curr_lvl != -1){
+	obj_game_manager.spare_parts = spare_parts_at_level_start
+	room_goto(obj_game_manager.level_lst[obj_game_manager.curr_lvl])
+}
 	
 
 // Inherit the parent event

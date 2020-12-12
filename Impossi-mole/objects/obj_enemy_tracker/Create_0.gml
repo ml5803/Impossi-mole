@@ -6,7 +6,7 @@ life = 100
 
 affected_by_grav = true
 
-damage = 10
+damage = 1
 
 dig_str = 5
 

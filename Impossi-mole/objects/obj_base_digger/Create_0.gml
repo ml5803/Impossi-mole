@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+tag = ""
+
 mspd = 1
 dig_str = 0
 jump_str = 0

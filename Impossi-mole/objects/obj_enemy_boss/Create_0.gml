@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
+damage = 1
+
 life_max = 3000
 
 life = 3000

@@ -46,6 +46,7 @@
     {"id":{"name":"obj_juice","path":"objects/obj_juice/obj_juice.yy",},"order":1,},
     {"id":{"name":"obj_btn_general","path":"objects/obj_btn_general/obj_btn_general.yy",},"order":18,},
     {"id":{"name":"spr_button_next_hover","path":"sprites/spr_button_next_hover/spr_button_next_hover.yy",},"order":31,},
+    {"id":{"name":"spr_dirt_background","path":"sprites/spr_dirt_background/spr_dirt_background.yy",},"order":33,},
     {"id":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},"order":16,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":6,},
     {"id":{"name":"spr_mole_claws_up1","path":"sprites/spr_mole_claws_up1/spr_mole_claws_up1.yy",},"order":22,},

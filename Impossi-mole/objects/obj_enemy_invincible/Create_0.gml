@@ -9,7 +9,7 @@ go_to = irandom_range(0, 3)
 life = 9999999999999999999999999
 dig_str = 1
 
-damage = 5
+damage = 1
 
 frame = 0
 switch_direction_time = 4 * room_speed
