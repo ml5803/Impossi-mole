@@ -1,15 +1,20 @@
 /// @description Insert description here
 // You can write your code in this editor
 draw_set_font(ft_game_smaller)
-if(room != rm_start){
+if(room != rm_start and room != rm_end){
 
 	var width = display_get_gui_width()
 
 	var start = 20
 
 	//draw spare parts icon 
-	draw_sprite(spr_spare_parts, 0, width - 200,  45)
-	draw_sprite(spr_cement, 0, width - 200,  160)
+	if room != story_room{
+		draw_sprite(spr_spare_parts, 0, width - 200,  45)
+	}
+	
+	if room != rm_upgrade and room != story_room{
+		draw_sprite(spr_cement, 0, width - 200,  120)
+	}
 	draw_set_font(ft_game)
 	if(instance_exists(obj_mole)){
 		for (var i = 0; i < obj_mole.life; i++){
@@ -22,15 +27,19 @@ if(room != rm_start){
 			draw_sprite(heart, 0, start, 45)
 			start += 96
 		}
-		draw_text(width - 130, 145, obj_mole.storage_limit)
+		draw_text(width - 122.5, 110, obj_mole.storage_limit)
 	}
 
 	draw_set_halign(fa_right)
-	draw_text(width - 100, 30, spare_parts)
+	if room != story_room{
+		draw_text(width - 100, 30, spare_parts)
+	}
+	
 	draw_set_halign(fa_left)
 }
 if(room == rm_end){
-	draw_text(300, 384, "Press r to restart game")
+	draw_set_font(ft_game)
+	draw_text(550, 700, "Press R to restart")
 	if(keyboard_check_pressed(ord("R"))){
 		//base stats
 		storage = 1
@@ -78,9 +87,9 @@ if(room == rm_end){
 }
 
 if (room == rm_start){
-	draw_text(300, 400, "Arrows to move")
-	draw_text(300, 420, "Space to jump")
-	draw_text(300, 440, "Hold a while moving to mine in that direction")
-	draw_text(300, 460, "press s while moving to place a block in that direction")
-	draw_text(300, 480, "press d while moving to shoot in that direction")
+	draw_text(50, 600, "Arrows to move")
+	draw_text(50, 620, "Space to jump")
+	draw_text(50, 640, "Hold A while moving to dig")
+	draw_text(50, 660, "Press S while moving to place a block")
+	draw_text(50, 680, "Press D while moving to shoot")
 }
