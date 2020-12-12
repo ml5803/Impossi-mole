@@ -38,7 +38,7 @@ body_sprite = 0
 claws_sprite = 0
 
 //spare parts
-spare_parts = 100
+spare_parts = 0
 
 level_lst = [rm_level_1, rm_level_2, rm_level_3, rm_level_4, rm_level_5_final]
 curr_lvl = 0

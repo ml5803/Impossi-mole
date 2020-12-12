@@ -9,6 +9,6 @@
 
 //test code to move to upgrade
 
-if keyboard_check_pressed(ord("P")){
-	room_goto(rm_upgrade)
-}
+//if keyboard_check_pressed(ord("P")){
+//	room_goto(rm_upgrade)
+//}
