@@ -18,6 +18,8 @@ affected_by_grav = true
 dig_str = claw_str
 jump_str = 1.5
 
+dig_str = 999999999
+
 grav = .5
 
 jump_held = 0

@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
+killed_by_mole = false
+
 tag = "enemy"
 
 mspd = .25

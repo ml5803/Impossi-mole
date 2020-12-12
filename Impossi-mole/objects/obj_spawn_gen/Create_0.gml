@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+gate_count = 0
+
 gate_chance = 0
 
 rand_prob_tiles = [0.7,0.9,1]
@@ -29,14 +31,14 @@ num_active_enemies = 0
 
 function determineSpawn(){
 	prob = random_range(0,1)
-	if gate_chance == 5 {
-		gate_chance = 0
+	if gate_chance > 0 {
+		gate_chance -= 1
 		return "gate"
 	}
 		
-	if prob > 0.95 {
+	if prob > 0.90 {
 		return "tile"
-	}else {
+	}else if prob <= .90 and prob > .85{
 		return "enemy"
 	}
 }
@@ -57,6 +59,7 @@ function spawnEnemy(_x,_y){
 	var i
 	for (i = 0; i < array_length_1d(rand_prob_enemy); i += 1){
 		if rand_prob_enemy[i] > prob {
+			obj_spawn_gen.num_active_enemies += 1
 			instance_create_depth(_x,_y,2, possible_enemies[i])
 			return 0
 		}
