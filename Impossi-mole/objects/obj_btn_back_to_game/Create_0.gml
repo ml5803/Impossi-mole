@@ -20,5 +20,7 @@ function doAction(){
 	}
 	if (obj_game_manager.curr_lvl == 4){
 		obj_type_writer.start_typing("You destroyed my home, YOU WILL BE EXTERMINATED!")
+		obj_audio_manager.stopBGM(obj_audio_manager.curr_bgm)
+		obj_audio_manager.playBGM(bgm_boss)
 	}
 }

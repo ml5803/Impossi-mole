@@ -14,6 +14,7 @@ if(just_damaged){
 
 if(instance_exists(instance_place(x, y, obj_mole)) and !just_damaged){
 		obj_mole.life -= damage
+		obj_audio_manager.playSound(sfx_squeak)
 		just_damaged = true
 		ShakeScreen(5, .1)
 }
@@ -46,14 +47,14 @@ if (life <= 0){
 	instance_destroy(self)
 }
 
-//rotations
-if (xprevious < x){
-	image_angle = -90
-} else if xprevious > x {
-	image_angle = 90
-} else if yprevious < y {
-	image_yscale = 0
-} else if yprevious > y {
-	image_yscale = 180
-}
+////rotations
+//if (xprevious < x){
+//	image_angle = -90
+//} else if xprevious > x {
+//	image_angle = 90
+//} else if yprevious < y {
+//	image_yscale = 0
+//} else if yprevious > y {
+//	image_yscale = 180
+//}
 

@@ -12,4 +12,8 @@ function playSound(sound){
 	audio_play_sound(sound, 1, false);
 }
 
+function stopBGM(bgm_to_play){
+	audio_stop_sound(bgm_to_play)
+}
+
 playBGM(bgm)
