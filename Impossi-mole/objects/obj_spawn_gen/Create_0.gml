@@ -80,7 +80,7 @@ function inReserveArea(_x,_y){
 }
 
 function despawn(){
-	if room == rm_level_4 or room == rm_test_enemies{
+	if room == rm_level_4{
 		with obj_base_enemy {
 			if point_distance(x, y, obj_spawn_gen.x, obj_spawn_gen.y) >= obj_spawn_gen.view_distance{
 				instance_destroy()

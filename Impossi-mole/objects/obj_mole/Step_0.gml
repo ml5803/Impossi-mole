@@ -103,7 +103,6 @@ if keyboard_check_pressed(ord("S")){
 //shoot
 last_shot += 1
 if keyboard_check(ord("D")){
-	
 	createShot(shot_dir)
 }
 

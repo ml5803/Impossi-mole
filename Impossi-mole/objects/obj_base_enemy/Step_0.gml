@@ -18,7 +18,7 @@ if(instance_exists(instance_place(x, y, obj_mole)) and !just_damaged){
 }
 
 if((x < 0 or x > room_width) and (y < 0 or y > room_height)){
-	if(room = rm_test_enemies or room = rm_level_4){
+	if(room == rm_level_4){
 		if (point_distance(x,y,obj_mole.x, obj_mole.y) > 640){
 			instance_destroy(self)
 		}
@@ -39,7 +39,7 @@ if (instance_exists(hit_bullet)){
 }
 
 if (life <= 0){
-	if(room == rm_level_4 or room == rm_test_enemies){
+	if(room == rm_level_4){
 		obj_spawn_gen.gate_chance += 1
 	}
 	instance_destroy(self)

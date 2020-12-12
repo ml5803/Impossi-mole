@@ -5,7 +5,7 @@ if(killed_by_mole){
 	instance_create_depth(x, y, 0, obj_spare_parts)
 }
 
-if(room == rm_level_4 or room == rm_test_enemies){
+if(room == rm_level_4){
 	obj_spawn_gen.num_active_enemies -= 1
 	obj_spawn_gen.gate_chance += 1
 }
