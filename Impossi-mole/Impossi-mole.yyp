@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"obj_screenshake","path":"objects/obj_screenshake/obj_screenshake.yy",},"order":34,},
     {"id":{"name":"obj_enemy_boss","path":"objects/obj_enemy_boss/obj_enemy_boss.yy",},"order":28,},
     {"id":{"name":"spr_mole_claws","path":"sprites/spr_mole_claws/spr_mole_claws.yy",},"order":18,},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":29,},
@@ -13,6 +14,7 @@
     {"id":{"name":"impos_title","path":"sprites/impos_title/impos_title.yy",},"order":33,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":16,},
     {"id":{"name":"obj_btn_storage_upgrade","path":"objects/obj_btn_storage_upgrade/obj_btn_storage_upgrade.yy",},"order":22,},
+    {"id":{"name":"ShakeScreen","path":"scripts/ShakeScreen/ShakeScreen.yy",},"order":4,},
     {"id":{"name":"spr_enemy_tracker","path":"sprites/spr_enemy_tracker/spr_enemy_tracker.yy",},"order":12,},
     {"id":{"name":"rm_upgrade","path":"rooms/rm_upgrade/rm_upgrade.yy",},"order":7,},
     {"id":{"name":"obj_enemy_mine","path":"objects/obj_enemy_mine/obj_enemy_mine.yy",},"order":11,},

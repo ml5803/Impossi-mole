@@ -15,6 +15,7 @@ if(just_damaged){
 if(instance_exists(instance_place(x, y, obj_mole)) and !just_damaged){
 		obj_mole.life -= damage
 		just_damaged = true
+		ShakeScreen(5, .1)
 }
 
 if((x < 0 or x > room_width) and (y < 0 or y > room_height)){

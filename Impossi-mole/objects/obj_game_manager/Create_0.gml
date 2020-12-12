@@ -41,4 +41,4 @@ claws_sprite = 0
 spare_parts = 100
 
 level_lst = [rm_level_1, rm_level_2, rm_level_3, rm_level_4, rm_level_5_final]
-curr_lvl = -1
+curr_lvl = 0
