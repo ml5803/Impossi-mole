@@ -15,7 +15,7 @@ if(!current_room_text_done and room != rm_start){
 		if(temp_str == currently_typing){
 			finished_typing = true
 		}
-		draw_text(300, 384, temp_str)
+		draw_text(type_x, type_y, temp_str)
 	}
 	else{
 		if (frame == typed_stay_dur and obj_game_manager.curr_lvl != -1){
@@ -23,6 +23,6 @@ if(!current_room_text_done and room != rm_start){
 			current_room_text_done = true
 			room_goto(obj_game_manager.level_lst[obj_game_manager.curr_lvl])
 		}
-		draw_text(300, 384, temp_str)
+		draw_text(type_x, type_y, temp_str)
 	}
 }

@@ -46,15 +46,3 @@ if (life <= 0){
 	}
 	instance_destroy(self)
 }
-
-////rotations
-//if (xprevious < x){
-//	image_angle = -90
-//} else if xprevious > x {
-//	image_angle = 90
-//} else if yprevious < y {
-//	image_yscale = 0
-//} else if yprevious > y {
-//	image_yscale = 180
-//}
-

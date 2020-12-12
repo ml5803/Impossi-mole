@@ -6,7 +6,7 @@ randomize()
 enum directions {top, left, right, bottom, center}
 
 //base stats
-storage = 1
+storage = 3
 move_spd = 2
 claw_power = 20
 hp = 1
